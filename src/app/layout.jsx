@@ -8,8 +8,8 @@ import { Providers } from "@/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Didit",
-  description: "A social app like Reddit or Hacker News",
+  title: "Spezialist",
+  description: "Just what the world needs: a Reddit clone.",
 };
 
 export default async function RootLayout({ children }) {
@@ -17,13 +17,13 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <header className="border-b border-zinc-200 p-4 flex items-center shadow-lg sticky top-0 bg-white bg-opacity-65 backdrop-blur-sm">
-            <Link href="/" className="text-xl">
-              Didit
+          <header className="border-b border-zinc-200 p-4 flex items-center shadow-lg sticky top-0 bg-green-700 bg-opacity-65 backdrop-blur-sm">
+            <Link href="/" className="text-xl text-green-200">
+              Spezialist
             </Link>
             <Link
               href="/add-post"
-              className="ml-10 hover:bg-zinc-300 p-2 rounded bg-pink-300 text-black"
+              className="ml-10 hover:bg-zinc-300 p-2 rounded bg-green-300 text-orange-950"
             >
               Add post
             </Link>
